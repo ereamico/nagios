@@ -1,0 +1,507 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Courier New;}{\f1\fmodern\fcharset0 Courier New;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red0\green0\blue0;\red48\green127\blue48;\red127\green127\blue27;\red127\green27\blue127;\red27\green127\blue127;\red64\green64\blue127;\red127\green64\blue64;\red27\green27\blue27;\red127\green48\blue48;}
+\viewkind4\uc1\pard\f0\fs18      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?                        \cf2\f1\bullet  MobaXterm 11.1 \bullet  \cf0\f0                          \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?            \cf3 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf4 ubuntu\cf0 @\cf4 18.215.239.70                              \cf0\u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf2\f0 v\cf0                                             \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf2\f0 v\cf0                                             \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf2\f0 v\cf0   (remote display is forwarded through SSH) \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf2\f0 v\cf0   (automatically set on remote server)      \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf5\ul help\cf0\ulnone  or visit our \cf5\ul website\cf0\ulnone            \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1087-aws x86_64)\cf1\highlight1 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight1 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight1 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight1 
+\par 
+\par \cf0\highlight0 69 packages can be updated.\cf1\highlight1 
+\par \cf0\highlight0 31 updates are security updates.\cf1\highlight1 
+\par 
+\par \cf0\highlight0 New release '18.04.2 LTS' available.\cf1\highlight1 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight1 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Wed Oct  2 01:04:12 2019 from 73.115.2.139\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ clear\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ sudo vi /usr/local/nagios/\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ sudo vi /usr/local/nagios/etc/objects/commands/cfg\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ sudo apt-get install -y autoconf automake gcc libc6 libmcrypt-dev make libssl-dev wget openssl\cf1\highlight1 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight1 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight1 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight1 
+\par \cf0\highlight0 gcc is already the newest version (4:5.3.1-1ubuntu1).\cf1\highlight1 
+\par \cf0\highlight0 gcc set to manually installed.\cf1\highlight1 
+\par \cf0\highlight0 make is already the newest version (4.1-6).\cf1\highlight1 
+\par \cf0\highlight0 make set to manually installed.\cf1\highlight1 
+\par \cf0\highlight0 libc6 is already the newest version (2.23-0ubuntu11).\cf1\highlight1 
+\par \cf0\highlight0 libssl-dev is already the newest version (1.0.2g-1ubuntu4.15).\cf1\highlight1 
+\par \cf0\highlight0 openssl is already the newest version (1.0.2g-1ubuntu4.15).\cf1\highlight1 
+\par \cf0\highlight0 wget is already the newest version (1.17.1-1ubuntu1.5).\cf1\highlight1 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight1 
+\par \cf0\highlight0   autotools-dev libmcrypt4 m4\cf1\highlight1 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight1 
+\par \cf0\highlight0   autoconf-archive gnu-standards autoconf-doc libtool gettext mcrypt\cf1\highlight1 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight1 
+\par \cf0\highlight0   autoconf automake autotools-dev libmcrypt-dev libmcrypt4 m4\cf1\highlight1 
+\par \cf0\highlight0 0 upgraded, 6 newly installed, 0 to remove and 69 not upgraded.\cf1\highlight1 
+\par \cf0\highlight0 Need to get 1,212 kB of archives.\cf1\highlight1 
+\par \cf0\highlight0 After this operation, 4,595 kB of additional disk space will be used.\cf1\highlight1 
+\par \cf0\highlight0 Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 m4 amd64 1.4.17-5 [195 kB]\cf1\highlight1 
+\par \cf0\highlight0 Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 autoconf all 2.69-9 [321 kB]\cf1\highlight1 
+\par \cf0\highlight0 Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 autotools-dev all 20150820.1 [39.8 kB]\cf1\highlight1 
+\par \cf0\highlight0 Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 automake all 1:1.15-4ubuntu1 [510 kB]\cf1\highlight1 
+\par \cf0\highlight0 Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 libmcrypt4 amd64 2.5.8-3.3 [63.0 kB]\cf1\highlight1 
+\par \cf0\highlight0 Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 libmcrypt-dev amd64 2.5.8-3.3 [83.7 kB]\cf1\highlight1 
+\par \cf0\highlight0 Fetched 1,212 kB in 0s (24.4 MB/s)\cf1\highlight1 
+\par \cf0\highlight0 Selecting previously unselected package m4.\cf1\highlight1 
+\par \cf0\highlight0 (Reading database ... 61640 files and directories currently installed.)\cf1\highlight1 
+\par \cf0\highlight0 Preparing to unpack .../archives/m4_1.4.17-5_amd64.deb ...\cf1\highlight1 
+\par \cf0\highlight0 Unpacking m4 (1.4.17-5) ...\cf1\highlight1 
+\par \cf0\highlight0 Selecting previously unselected package autoconf.\cf1\highlight1 
+\par \cf0\highlight0 Preparing to unpack .../autoconf_2.69-9_all.deb ...\cf1\highlight1 
+\par \cf0\highlight0 Unpacking autoconf (2.69-9) ...\cf1\highlight1 
+\par \cf0\highlight0 Selecting previously unselected package autotools-dev.\cf1\highlight1 
+\par \cf0\highlight0 Preparing to unpack .../autotools-dev_20150820.1_all.deb ...\cf1\highlight1 
+\par \cf0\highlight0 Unpacking autotools-dev (20150820.1) ...\cf1\highlight1 
+\par \cf0\highlight0 Selecting previously unselected package automake.\cf1\highlight1 
+\par \cf0\highlight0 Preparing to unpack .../automake_1%3a1.15-4ubuntu1_all.deb ...\cf1\highlight1 
+\par \cf0\highlight0 Unpacking automake (1:1.15-4ubuntu1) ...\cf1\highlight1 
+\par \cf0\highlight0 Selecting previously unselected package libmcrypt4.\cf1\highlight1 
+\par \cf0\highlight0 Preparing to unpack .../libmcrypt4_2.5.8-3.3_amd64.deb ...\cf1\highlight1 
+\par \cf0\highlight0 Unpacking libmcrypt4 (2.5.8-3.3) ...\cf1\highlight1 
+\par \cf0\highlight0 Selecting previously unselected package libmcrypt-dev.\cf1\highlight1 
+\par \cf0\highlight0 Preparing to unpack .../libmcrypt-dev_2.5.8-3.3_amd64.deb ...\cf1\highlight1 
+\par \cf0\highlight0 Unpacking libmcrypt-dev (2.5.8-3.3) ...\cf1\highlight1 
+\par \cf0\highlight0 Processing triggers for install-info (6.1.0.dfsg.1-5) ...\cf1\highlight1 
+\par \cf0\highlight0 Processing triggers for man-db (2.7.5-1) ...\cf1\highlight1 
+\par \cf0\highlight0 Setting up m4 (1.4.17-5) ...\cf1\highlight1 
+\par \cf0\highlight0 Setting up autoconf (2.69-9) ...\cf1\highlight1 
+\par \cf0\highlight0 Setting up autotools-dev (20150820.1) ...\cf1\highlight1 
+\par \cf0\highlight0 Setting up automake (1:1.15-4ubuntu1) ...\cf1\highlight1 
+\par \cf0\highlight0 update-alternatives: using /usr/bin/automake-1.15 to provide /usr/bin/automake (automake) in auto mode\cf1\highlight1 
+\par \cf0\highlight0 Setting up libmcrypt4 (2.5.8-3.3) ...\cf1\highlight1 
+\par \cf0\highlight0 Setting up libmcrypt-dev (2.5.8-3.3) ...\cf1\highlight1 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.23-0ubuntu11) ...\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ wget --no-check-certificate -O nrpe.tar.gz https://github.com/NagiosEnterprises/nrpe/archive/nrpe-3.2.1.tar.gz\cf1\highlight1 
+\par \cf0\highlight0 --2019-10-02 03:16:29--  https://github.com/NagiosEnterprises/nrpe/archive/nrpe-3.2.1.tar.gz\cf1\highlight1 
+\par \cf0\highlight0 Resolving github.com (github.com)... 140.82.114.3\cf1\highlight1 
+\par \cf0\highlight0 Connecting to github.com (github.com)|140.82.114.3|:443... connected.\cf1\highlight1 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 302 Found\cf1\highlight1 
+\par \cf0\highlight0 Location: https://codeload.github.com/NagiosEnterprises/nrpe/tar.gz/nrpe-3.2.1 [following]\cf1\highlight1 
+\par \cf0\highlight0 --2019-10-02 03:16:29--  https://codeload.github.com/NagiosEnterprises/nrpe/tar.gz/nrpe-3.2.1\cf1\highlight1 
+\par \cf0\highlight0 Resolving codeload.github.com (codeload.github.com)... 192.30.253.121\cf1\highlight1 
+\par \cf0\highlight0 Connecting to codeload.github.com (codeload.github.com)|192.30.253.121|:443... connected.\cf1\highlight1 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight1 
+\par \cf0\highlight0 Length: unspecified [application/x-gzip]\cf1\highlight1 
+\par \cf0\highlight0\f1 Saving to: \lquote nrpe.tar.gz\rquote\cf1\highlight1\f0 
+\par 
+\par \cf0\highlight0 nrpe.tar.gz                      [ <=>                                        ] 505.89K  --.-KB/s    in 0.04s\cf1\highlight1 
+\par 
+\par \cf0\highlight0\f1 2019-10-02 03:16:29 (12.4 MB/s) - \lquote nrpe.tar.gz\rquote  saved [518035]\cf1\highlight1\f0 
+\par 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ tar -xvzf nrpe.tar.gz\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/.gitignore\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/.travis.yml\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/CHANGELOG.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/LEGAL\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/LICENSE.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/Makefile.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/README.SSL.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/README.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/SECURITY.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/THANKS\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/aclocal.m4\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/build-aux/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/build-aux/config.guess\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/build-aux/config.sub\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/build-aux/custom_help.m4\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/build-aux/install-sh\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/configure\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/configure.ac\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/contrib/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/contrib/README.nrpe_check_control\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/contrib/nrpe_check_control.c\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/docs/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/docs/NRPE.odt\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/docs/NRPE.pdf\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/include/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/include/acl.h\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/include/common.h.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/include/config.h.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/include/nrpe.h\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/include/utils.h\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/.gitignore\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/CHANGELOG.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/LICENSE\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/LICENSE.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/README.md\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/add_group_user\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/ax_nagios_get_distrib\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/ax_nagios_get_files\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/ax_nagios_get_inetd\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/ax_nagios_get_init\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/ax_nagios_get_os\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/ax_nagios_get_paths\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/macros/ax_nagios_get_ssl\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/nrpe.spec.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/paths.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/sample-config/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/sample-config/nrpe.cfg.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/src/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/src/Makefile.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/src/acl.c\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/src/check_nrpe.c\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/src/nrpe.c\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/src/snprintf.c\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/src/utils.c\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/bsd-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/debian-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/default-inetd.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/default-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/default-service.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/default-socket-svc.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/default-socket.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/default-xinetd.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/gentoo-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/mac-inetd.plist.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/mac-init.plist.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/newbsd-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/openbsd-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/openrc-conf.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/openrc-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/rh-upstart-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/solaris-inetd.xml.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/solaris-init.xml.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/tmpfile.conf.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/startup/upstart-init.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/test-wrapper\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/travis-test-1\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/uninstall.in\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/update-cfg.pl\cf1\highlight1 
+\par \cf0\highlight0 nrpe-nrpe-3.2.1/update-version\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ ls\cf1\highlight1 
+\par \cf6\highlight0 nagios-4.4.2\cf0          \cf6 nagios-plugins-2.2.1\cf0          \cf6 nrpe-nrpe-3.2.1\cf1\highlight1 
+\par \cf7\highlight0 nagios-4.4.2.tar.gz\cf0   \cf7 nagios-plugins-2.2.1.tar.gz\cf0   \cf7 nrpe.tar.gz\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ ./configure\cf1\highlight1 
+\par \cf0\highlight0 -bash: ./configure: No such file or directory\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ cd /tmp/nrpe-nrpe-3.2.1\cf1\highlight1 
+\par \cf0\highlight0 -bash: cd: /tmp/nrpe-nrpe-3.2.1: No such file or directory\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ cd nrpe-nrpe-3.2.1\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~/nrpe-nrpe-3.2.1$ ./configure\cf1\highlight1 
+\par \cf0\highlight0 checking for a BSD-compatible install... /usr/bin/install -c\cf1\highlight1 
+\par \cf0\highlight0 checking what the operating system is ... linux\cf1\highlight1 
+\par \cf0\highlight0 checking what the distribution type is ... debian\cf1\highlight1 
+\par \cf0\highlight0 checking what init system is being used ... systemd\cf1\highlight1 
+\par \cf0\highlight0 checking what inetd is being used ... systemd\cf1\highlight1 
+\par \cf0\highlight0 checking for which paths to use ... default\cf1\highlight1 
+\par \cf0\highlight0 checking for which init file to use ... default-service\cf1\highlight1 
+\par \cf0\highlight0 checking for which inetd files to use ... default-socket\cf1\highlight1 
+\par \cf0\highlight0 checking for gcc... gcc\cf1\highlight1 
+\par \cf0\highlight0 checking whether the C compiler works... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for C compiler default output file name... a.out\cf1\highlight1 
+\par \cf0\highlight0 checking for suffix of executables...\cf1\highlight1 
+\par \cf0\highlight0 checking whether we are cross compiling... no\cf1\highlight1 
+\par \cf0\highlight0 checking for suffix of object files... o\cf1\highlight1 
+\par \cf0\highlight0 checking whether we are using the GNU C compiler... yes\cf1\highlight1 
+\par \cf0\highlight0 checking whether gcc accepts -g... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for gcc option to accept ISO C89... none needed\cf1\highlight1 
+\par \cf0\highlight0 checking whether make sets $(MAKE)... yes\cf1\highlight1 
+\par \cf0\highlight0 checking how to run the C preprocessor... gcc -E\cf1\highlight1 
+\par \cf0\highlight0 checking for grep that handles long lines and -e... /bin/grep\cf1\highlight1 
+\par \cf0\highlight0 checking for egrep... /bin/grep -E\cf1\highlight1 
+\par \cf0\highlight0 checking for ANSI C header files... yes\cf1\highlight1 
+\par \cf0\highlight0 checking whether time.h and sys/time.h may both be included... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/wait.h that is POSIX.1 compatible... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/types.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/stat.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for stdlib.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for string.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for memory.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for strings.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for inttypes.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for stdint.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for unistd.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking ctype.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking ctype.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for ctype.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking dirent.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking dirent.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for dirent.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking errno.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking errno.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for errno.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking fcntl.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking fcntl.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for fcntl.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking getopt.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking getopt.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for getopt.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking grp.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking grp.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for grp.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for inttypes.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking netdb.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking netdb.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for netdb.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking pwd.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking pwd.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for pwd.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking signal.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking signal.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for signal.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for stdint.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking for strings.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking for string.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking syslog.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking syslog.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for syslog.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking tcpd.h usability... no\cf1\highlight1 
+\par \cf0\highlight0 checking tcpd.h presence... no\cf1\highlight1 
+\par \cf0\highlight0 checking for tcpd.h... no\cf1\highlight1 
+\par \cf0\highlight0 checking for unistd.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking arpa/inet.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking arpa/inet.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for arpa/inet.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking netinet/in.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking netinet/in.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for netinet/in.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking socket.h usability... no\cf1\highlight1 
+\par \cf0\highlight0 checking socket.h presence... no\cf1\highlight1 
+\par \cf0\highlight0 checking for socket.h... no\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/types.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking sys/time.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking sys/time.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/time.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking sys/resource.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking sys/resource.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/resource.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/wait.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking sys/socket.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking sys/socket.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/socket.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for sys/stat.h... (cached) yes\cf1\highlight1 
+\par \cf0\highlight0 checking paths.h usability... yes\cf1\highlight1 
+\par \cf0\highlight0 checking paths.h presence... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for paths.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for an ANSI C-conforming const... yes\cf1\highlight1 
+\par \cf0\highlight0 checking whether struct tm is in sys/time.h or time.h... time.h\cf1\highlight1 
+\par \cf0\highlight0 checking for mode_t... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for pid_t... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for size_t... yes\cf1\highlight1 
+\par \cf0\highlight0 checking return type of signal handlers... void\cf1\highlight1 
+\par \cf0\highlight0 checking for uid_t in sys/types.h... yes\cf1\highlight1 
+\par \cf0\highlight0 checking type of array argument to getgroups... gid_t\cf1\highlight1 
+\par \cf0\highlight0 checking size of int... 4\cf1\highlight1 
+\par \cf0\highlight0 checking size of short... 2\cf1\highlight1 
+\par \cf0\highlight0 checking size of long... 8\cf1\highlight1 
+\par \cf0\highlight0 checking for uint32_t... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for u_int32_t... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for int32_t... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for struct sockaddr_storage... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for seteuid... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for va_copy... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for vsnprintf... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for snprintf... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for asprintf... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for vasprintf... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for C99 vsnprintf... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for getopt_long... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for main in -lnsl... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for socket in -lsocket... no\cf1\highlight1 
+\par \cf0\highlight0 checking for main in -lwrap... no\cf1\highlight1 
+\par \cf0\highlight0 checking for strdup... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for strstr... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for strtoul... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for strtok_r... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for initgroups... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for closesocket... no\cf1\highlight1 
+\par \cf0\highlight0 checking for sigaction... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for scandir... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for socklen_t... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for type of socket size... size_t\cf1\highlight1 
+\par \cf0\highlight0 checking for Kerberos include files... configure: WARNING: could not find include files\cf1\highlight1 
+\par \cf0\highlight0 checking for pkg-config... pkg-config\cf1\highlight1 
+\par \cf0\highlight0 checking whether compiling and linking against SSL works... yes\cf1\highlight1 
+\par \cf0\highlight0 checking for openssl... /usr/bin/openssl\cf1\highlight1 
+\par 
+\par \cf0\highlight0 *** Generating DH Parameters for SSL/TLS ***\cf1\highlight1 
+\par \cf0\highlight0 Generating DH parameters, 2048 bit long safe prime, generator 2\cf1\highlight1 
+\par \cf0\highlight0 This is going to take a long time\cf1\highlight1 
+\par \cf0\highlight0 ................................................................................................................................................+....................................................................................+...............................+...................................................+...........+..........................................................................................................................+..................................................................................................................................................................+.............................................................................................................................................................................................+...........................................................+........................................+........................................................................................................................................................................................+..................................................................................+.......................................................+................................++*++*\cf1\highlight1 
+\par \cf0\highlight0 checking for perl... /usr/bin/perl\cf1\highlight1 
+\par \cf0\highlight0 configure: creating ./config.status\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating Makefile\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating src/Makefile\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating nrpe.spec\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating uninstall\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating sample-config/nrpe.cfg\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/bsd-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/debian-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/default-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/default-inetd\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/default-service\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/default-socket\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/default-socket-svc\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/default-xinetd\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/mac-init.plist\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/mac-inetd.plist\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/newbsd-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/openbsd-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/openrc-conf\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/openrc-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/solaris-init.xml\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/solaris-inetd.xml\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/tmpfile.conf\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/upstart-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating startup/rh-upstart-init\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating include/common.h\cf1\highlight1 
+\par \cf0\highlight0 config.status: creating include/config.h\cf1\highlight1 
+\par 
+\par 
+\par \cf0\highlight0 *** Configuration summary for nrpe 3.2.1 2017-09-01 ***:\cf1\highlight1 
+\par 
+\par \cf0\highlight0  General Options:\cf1\highlight1 
+\par \cf0\highlight0  -------------------------\cf1\highlight1 
+\par \cf0\highlight0  NRPE port:    5666\cf1\highlight1 
+\par \cf0\highlight0  NRPE user:    nagios\cf1\highlight1 
+\par \cf0\highlight0  NRPE group:   nagios\cf1\highlight1 
+\par \cf0\highlight0  Nagios user:  nagios\cf1\highlight1 
+\par \cf0\highlight0  Nagios group: nagios\cf1\highlight1 
+\par 
+\par 
+\par \cf0\highlight0 Review the options above for accuracy.  If they look okay,\cf1\highlight1 
+\par \cf0\highlight0 type 'make all' to compile the NRPE daemon and client\cf1\highlight1 
+\par \cf0\highlight0 or type 'make' to get a list of make options.\cf1\highlight1 
+\par 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~/nrpe-nrpe-3.2.1$ $ make check_nrpe\cf1\highlight1 
+\par \cf0\highlight0 $: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~/nrpe-nrpe-3.2.1$ make check_nrpe\cf1\highlight1 
+\par \cf0\highlight0 cd ./src/; make\cf1\highlight1 
+\par \cf0\highlight0 make[1]: Entering directory '/home/ubuntu/nrpe-nrpe-3.2.1/src'\cf1\highlight1 
+\par \cf0\highlight0 gcc -g -O2  -DHAVE_CONFIG_H -I ../include -I ./../include -o nrpe ./nrpe.c ./utils.c ./acl.c -lssl -lcrypto -lnsl\cf1\highlight1 
+\par \cf0\highlight0 gcc -g -O2  -DHAVE_CONFIG_H -I ../include -I ./../include -o check_nrpe ./check_nrpe.c ./utils.c -lssl -lcrypto -lnsl\cf1\highlight1 
+\par \cf0\highlight0 make[1]: Leaving directory '/home/ubuntu/nrpe-nrpe-3.2.1/src'\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~/nrpe-nrpe-3.2.1$ sudo make install-plugin\cf1\highlight1 
+\par \cf0\highlight0 cd ./src/; make install-plugin\cf1\highlight1 
+\par \cf0\highlight0 make[1]: Entering directory '/home/ubuntu/nrpe-nrpe-3.2.1/src'\cf1\highlight1 
+\par \cf0\highlight0 /usr/bin/install -c -m 755 -d /usr/local/nagios/bin\cf1\highlight1 
+\par \cf0\highlight0 /usr/bin/install -c -m 755 ../uninstall /usr/local/nagios/bin/nrpe-uninstall\cf1\highlight1 
+\par \cf0\highlight0 /usr/bin/install -c -m 775 -o nagios -g nagios -d /usr/local/nagios/libexec\cf1\highlight1 
+\par \cf0\highlight0 /usr/bin/install -c -m 775 -o nagios -g nagios -d /usr/local/nagios/libexec\cf1\highlight1 
+\par \cf0\highlight0 /usr/bin/install -c -m 775 -o nagios -g nagios check_nrpe /usr/local/nagios/libexec\cf1\highlight1 
+\par \cf0\highlight0 make[1]: Leaving directory '/home/ubuntu/nrpe-nrpe-3.2.1/src'\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~/nrpe-nrpe-3.2.1$ /usr/local/nagios/libexec/check_nrpe -H 3.87.19.36\cf1\highlight1 
+\par \cf0\highlight0 NRPE v2.15\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~/nrpe-nrpe-3.2.1$ cd\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ sudo vi /usr/local/nagios/etc/nagios.cfg\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ sudo mkdir /usr/local/nagios/etc/servers\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:~$ cd /usr/local/nagios/etc/servers\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo vi myserver.cfgsudo vi myserver.cfg\cf1\highlight1 
+\par \cf0\highlight0 3 files to edit\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo vi myserver.cfgsudo vi myserver.cfg\cf1\highlight1 
+\par \cf0\highlight0 3 files to edit\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo vi myserver.cfgsudo vi myserver.cfg\cf1\highlight1 
+\par \cf0\highlight0 3 files to edit\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Nagios Core 4.4.2\cf1\highlight1 
+\par \cf0\highlight0 Copyright (c) 2009-present Nagios Core Development Team and Community Contributors\cf1\highlight1 
+\par \cf0\highlight0 Copyright (c) 1999-2009 Ethan Galstad\cf1\highlight1 
+\par \cf0\highlight0 Last Modified: 2018-08-16\cf1\highlight1 
+\par \cf0\highlight0 License: GPL\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Website: https://www.nagios.org\cf1\highlight1 
+\par \cf0\highlight0 Reading configuration data...\cf1\highlight1 
+\par \cf0\highlight0    Read main config file okay...\cf1\highlight1 
+\par \cf0\highlight0    Read object config files okay...\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Running pre-flight check on configuration data...\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Checking objects...\cf1\highlight1 
+\par \cf0\highlight0         Checked 8 services.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 hosts.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 host groups.\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 service groups.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 contacts.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 contact groups.\cf1\highlight1 
+\par \cf0\highlight0         Checked 24 commands.\cf1\highlight1 
+\par \cf0\highlight0         Checked 5 time periods.\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 host escalations.\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 service escalations.\cf1\highlight1 
+\par \cf0\highlight0 Checking for circular paths...\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 hosts\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 service dependencies\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 host dependencies\cf1\highlight1 
+\par \cf0\highlight0         Checked 5 timeperiods\cf1\highlight1 
+\par \cf0\highlight0 Checking global event handlers...\cf1\highlight1 
+\par \cf0\highlight0 Checking obsessive compulsive processor commands...\cf1\highlight1 
+\par \cf0\highlight0 Checking misc settings...\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Total Warnings: 0\cf1\highlight1 
+\par \cf0\highlight0 Total Errors:   0\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Things look okay - No serious problems were detected during the pre-flight check\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo service nagios restart\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo vi myserver.cfgsudo\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo service nagios restart                               ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo vi myserver.cfgsudo\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo service nagios restart\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo vi myserver.cfgsudo\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Nagios Core 4.4.2\cf1\highlight1 
+\par \cf0\highlight0 Copyright (c) 2009-present Nagios Core Development Team and Community Contributors\cf1\highlight1 
+\par \cf0\highlight0 Copyright (c) 1999-2009 Ethan Galstad\cf1\highlight1 
+\par \cf0\highlight0 Last Modified: 2018-08-16\cf1\highlight1 
+\par \cf0\highlight0 License: GPL\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Website: https://www.nagios.org\cf1\highlight1 
+\par \cf0\highlight0 Reading configuration data...\cf1\highlight1 
+\par \cf0\highlight0    Read main config file okay...\cf1\highlight1 
+\par \cf0\highlight0    Read object config files okay...\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Running pre-flight check on configuration data...\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Checking objects...\cf1\highlight1 
+\par \cf0\highlight0         Checked 8 services.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 hosts.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 host groups.\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 service groups.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 contacts.\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 contact groups.\cf1\highlight1 
+\par \cf0\highlight0         Checked 24 commands.\cf1\highlight1 
+\par \cf0\highlight0         Checked 5 time periods.\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 host escalations.\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 service escalations.\cf1\highlight1 
+\par \cf0\highlight0 Checking for circular paths...\cf1\highlight1 
+\par \cf0\highlight0         Checked 1 hosts\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 service dependencies\cf1\highlight1 
+\par \cf0\highlight0         Checked 0 host dependencies\cf1\highlight1 
+\par \cf0\highlight0         Checked 5 timeperiods\cf1\highlight1 
+\par \cf0\highlight0 Checking global event handlers...\cf1\highlight1 
+\par \cf0\highlight0 Checking obsessive compulsive processor commands...\cf1\highlight1 
+\par \cf0\highlight0 Checking misc settings...\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Total Warnings: 0\cf1\highlight1 
+\par \cf0\highlight0 Total Errors:   0\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Things look okay - No serious problems were detected during the pre-flight check\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$ sudo service nagios restart                               ubuntu@ip-172-31-39-116:/usr/local/nagios/etc/servers$\cf1\highlight1 
+\par \cf8\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight1 
+\par 
+\par \cf9\highlight0 Session stopped\cf1\highlight1 
+\par \cf0\highlight0     - Press \cf4 <return>\cf0  to exit tab\cf1\highlight1 
+\par \cf0\highlight0     - Press \cf4 R\cf0  to restart session\cf1\highlight1 
+\par \cf0\highlight0     - Press \cf4 S\cf0  to save terminal output to file\cf1\highlight1 
+\par 
+\par \cf9\highlight0 Network error: Software caused connection abort\cf1\highlight1 
+\par \pard\cf0\highlight0\f2\fs16 
+\par }
+ 
